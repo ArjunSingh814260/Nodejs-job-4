@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <form  onsubmit="return false;" id="form">
+          <div class="container-box-1">
+            <div class="inner-container-1">
+              <input
+                type="text"
+                name="fName"
+                id="fName"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="inner-container-2">
+              <input
+                type="text"
+                name="lName"
+                id="lName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="container-box-2">
+            <div class="email-country">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="abc123@.com"
+                required
+              />
+
+              <select id="country"  required>
+                <option value="">Select your Country</option>
+              </select>
+            </div>
+            <div class="gender-box">
+              <h5>Gender:</h5>
+              <label for="Male">Male</label>
+              <input type="radio" name="gender" id="Male" value="Male" />
+              <label for="Male">Female</label>
+              <input type="radio" name="gender" id="Female" value="Female" />
+            </div>
+          </div>
+
+          <div class="container-box-3" id="address-box">
+            <div class="address-container">
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Please Enter Your city"
+                required
+              />
+
+              <input type="text" id="state" placeholder="Please Enter state"  required/>
+
+              <input type="text" id="zip" placeholder="Please Enter Your zip" required />
+            </div>
+            <button id="address-btn">Add address</button>
+          </div>
+          <div class="container-box-4">
+            <input type="file" id="file" name="file"  required/>
+            <button id="btn-submit">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </body>
+</html>
